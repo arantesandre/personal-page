@@ -39,3 +39,8 @@ a {
   color: #ffffff;
   font-size: 40px;
 }
+
+a:hover {
+  color: #c19c3d; /* Cor dourada ao passar o mouse */
+  transform: scale(1.1); /* Leve aumento no tamanho ao passar o mouse */
+}
