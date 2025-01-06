@@ -6,38 +6,40 @@ body {
   height: 100vh;
   /* background-color: #f4f4f4; */
   /* background-color: #121212; */
-  background-color: #1e1e1e;
+  background-color: #222222;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 main {
   text-align: center;
   /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 h1 {
   color: #ffffff;
-  font-size: 40px;
+  font-size: 48px;
+  letter-spacing: 2px;
 }
 
 p {
-  color: #c19c3d;
-  font-size: 16px;
+  color: #8c7853;
+  font-size: 24px;
 }
 
 .icon {
   display: flex;
   justify-content: space-evenly;
-
-  margin-top: 32px;
 }
 
 a {
   color: #ffffff;
-  font-size: 40px;
+  font-size: 56px;
 }
 
 a:hover {
