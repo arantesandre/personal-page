@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -9,6 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: Arial, sans-serif;
+  padding: 20px;
 }
 
 main {
@@ -16,20 +18,23 @@ main {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  max-width: 90%;
 }
 
+/* Título */
 h1 {
   color: #ffffff;
   font-size: 48px;
   letter-spacing: 2px;
 }
 
+/* Subtítulo */
 p {
-  /* color: #8c7853; */
   color: #4da6ff;
   font-size: 24px;
 }
 
+/* Ícones */
 .icon {
   display: flex;
   justify-content: space-evenly;
@@ -38,17 +43,17 @@ p {
 a {
   color: #ffffff;
   font-size: 56px;
+  transition: all 0.3s ease;
 }
 
-/* efeito acender */
+/* Hover nos ícones */
 a:hover {
   color: #00ffcc;
   transform: scale(1.1);
   text-shadow: 0 0 8px #00ffcc, 0 0 15px #00ffcc;
 }
 
-/* PORTFOLIO */
-
+/* Seção do projeto */
 .projeto {
   margin-top: 40px;
   color: #4da6ff;
@@ -57,11 +62,8 @@ a:hover {
   margin-right: auto;
   padding: 20px;
   background-color: #2a2a2a;
-  /* leve fundo escuro para destacar */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(77, 166, 255, 0.4);
-  /* sombra azul suave */
-  font-family: Arial, sans-serif;
   line-height: 1.5;
 }
 
@@ -69,7 +71,6 @@ a:hover {
   font-size: 36px;
   margin-bottom: 20px;
   color: #ffffff;
-  text-align: center;
   letter-spacing: 1.5px;
 }
 
@@ -77,7 +78,6 @@ a:hover {
   font-size: 18px;
   margin-bottom: 15px;
   color: #c0d9ff;
-  text-align: center;
 }
 
 .projeto a {
@@ -93,11 +93,76 @@ a:hover {
 }
 
 .projeto a:hover {
-  /* background-color: #4da6ff;
-  color: #222222;
-  text-decoration: none; */
-
   color: #00ffcc;
   transform: scale(1.1);
   text-shadow: 0 0 8px #00ffcc, 0 0 15px #00ffcc;
+}
+
+/* RESPONSIVO */
+
+/* Tablets */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .icon {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  a {
+    font-size: 48px;
+  }
+
+  .projeto {
+    padding: 16px;
+    margin: 20px auto 0;
+  }
+
+  .projeto h2 {
+    font-size: 28px;
+  }
+
+  .projeto p {
+    font-size: 16px;
+  }
+
+  .projeto a {
+    font-size: 16px;
+    padding: 8px 14px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  a {
+    font-size: 40px;
+  }
+
+  .projeto h2 {
+    font-size: 24px;
+  }
+
+  .projeto p {
+    font-size: 14px;
+  }
+
+  .projeto a {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
 }
